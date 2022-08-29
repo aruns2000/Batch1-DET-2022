@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class Circle
+    public class Person
     {
-        double radius;
-
-        public double area()
+        public string Age { get; set; }
+        public override string ToString()
         {
-            return Math.PI * radius * radius;
+            return Age;
         }
     }
 }

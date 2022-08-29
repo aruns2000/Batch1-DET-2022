@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class Circle
+    public class InvalidEmpIdException:Exception
     {
-        double radius;
+        internal bool msg;
 
-        public double area()
+        public InvalidEmpIdException(string msg):base(msg)
         {
-            return Math.PI * radius * radius;
+
         }
     }
 }

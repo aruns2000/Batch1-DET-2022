@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class Circle
+    internal class TestCircleGet
     {
-        double radius;
-
-        public double area()
+        public static void Main()
         {
-            return Math.PI * radius * radius;
+           
         }
     }
 }

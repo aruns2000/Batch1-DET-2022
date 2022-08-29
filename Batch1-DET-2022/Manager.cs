@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class Circle
+    public class Manager : Emp
     {
-        double radius;
-
-        public double area()
+        public Manager(int eid, string ename, DateTime doj,string project,int teamSize) : base(eid, ename, doj)
         {
-            return Math.PI * radius * radius;
         }
+
+        
     }
 }

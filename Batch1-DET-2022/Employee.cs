@@ -16,7 +16,7 @@ namespace Batch1_DET_2022
         int grossSalary;
         int pf;
         int netSalary;
-        public Employee(int rollNumber,String eName,String address,int pinCode,int phonenumber,int grossSalary,int pf)
+        public Employee(int rollNumber,String eName,String address,int pinCode,int phonenumber,int grossSalary)
         {
             this.rollNumber = rollNumber;
             this.eName = eName;
@@ -32,8 +32,18 @@ namespace Batch1_DET_2022
 
         public int GetEmpSalary()
         {
-            
-            return netSalary = grossSalary - pf;
+            netSalary = 12 * grossSalary / 100;
+            return netSalary;
+        }
+
+        public char GetEmployeeDetails()
+        {
+            if (GetEmpSalary() > 10000)
+                return 'A';
+            else if (GetEmpSalary() > 8000)
+                return 'B';
+            else
+                return 'C';
         }
        
     }
