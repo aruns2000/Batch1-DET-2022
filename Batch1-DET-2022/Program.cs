@@ -83,18 +83,26 @@ class MyClass
         //}
         //catch(Exception a)
         //{ }
-        List<Animal> animal = new List<Animal>();
-        animal.Add(new Dog());
-        animal.Add(new Cat());
+        //List<Animal> animal = new List<Animal>();
+        //animal.Add(new Dog());
+        //animal.Add(new Cat());
 
-        foreach (Animal a in animal)
-            Console.WriteLine(a.ToString());
+        //foreach (Animal a in animal)
+        //    Console.WriteLine(a.ToString());
 
+
+        ScienceStudent Student = new ScienceStudent { regno = 12, Name = "vinay" };
+        ScienceStudent sciencesubject = new ScienceStudent { physics = 54, chemistry = 75, maths = 45 };
+        CommerceStudent Commercessubject = new CommerceStudent { economices = 44, accounts = 82, banking = 44 };
+
+        Console.WriteLine($"The avg Score of Science Student is:{sciencesubject.GetAvgMarks()}");
+        Console.WriteLine($"The avg Score of Commerce Student is:{Commercessubject.GetAvgMarks()}");
     }
+
+}
 
    
 
     
 
   
-}
