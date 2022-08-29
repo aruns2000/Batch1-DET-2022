@@ -69,20 +69,26 @@ class MyClass
         //Console.WriteLine(company.Print());
 
         int Age;
-        try
-        {
-            Console.WriteLine("Enter the Age b/w 1-100");
-            Age = int.Parse(Console.ReadLine());
-            if (Age > 100)
-                throw new Exception("Enter the valid age");
+        //try
+        //{
+        //    Console.WriteLine("Enter the Age b/w 1-100");
+        //    Age = int.Parse(Console.ReadLine());
+        //    if (Age > 100)
+        //        throw new Exception("Enter the valid age");
 
-        }
-        catch(InvalidEmpIdException a)
-        {
-            Console.WriteLine(a.msg);
-        }
-        catch(Exception a)
-        { }
+        //}
+        //catch(InvalidEmpIdException a)
+        //{
+        //    Console.WriteLine(a.msg);
+        //}
+        //catch(Exception a)
+        //{ }
+        List<Animal> animal = new List<Animal>();
+        animal.Add(new Dog());
+        animal.Add(new Cat());
+
+        foreach (Animal a in animal)
+            Console.WriteLine(a.ToString());
 
     }
 

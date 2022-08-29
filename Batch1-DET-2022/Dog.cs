@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Batch1_DET_2022
 {
-    internal class TestCircleGet
+     public class Dog:Animal
     {
-        public static void Main()
+        public override string ToString()
         {
-           
+            return "Bow-Bow";
         }
     }
 }

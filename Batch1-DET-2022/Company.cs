@@ -20,7 +20,7 @@ namespace Batch1_DET_2022
 
        override public string ToString()
         {
-            return $"Name={Name} ,Address={Address},Website={Website},Manager={Manager.Print()}";
+            return $"Name={Name} ,Address={Address},Website={Website},Manager={Manager.ToString()}";
         }
     }
 }

@@ -12,12 +12,7 @@ namespace Batch1_DET_2022
         {
             Employee e = new Employee(200, "arun", "bg", 5632, 73386524, 33330);
 
-            
-
-
-
             int result = e.GetEmpSalary();
-
 
             Console.WriteLine($"The Netsalary is  {e.GetEmpSalary()}");
             Console.WriteLine($"The Band of Employee is {e.GetEmployeeDetails()}");
