@@ -4,67 +4,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Batch1_DET_2022
-{
-    public class Emp
-    {
+//namespace Batch1_DET_2022
+//{
+    //public class Emp
+    //{
 
-        //data declared inside class are known as "fields"
-        int id;
-        string name;
-        string dept;
-        double sal;
-        DateTime doj;
+    //    //data declared inside class are known as "fields"
+    //    int id;
+    //    string name;
+    //    string dept;
+    //    double sal;
+    //    DateTime doj;
 
-        //constructor - is a function used to init object data
-        //has the same name as classname, no ret type
-        public Emp(int id, string name, DateTime doj)
-        {
-            this.id = id; this.name = name; this.doj = doj;
-        }
-        public Emp()
-        {
-            id = -1; name = "no name";
-        }
-        public Emp(int id, string name)
-        {
-            this.id = id; this.name = name;
-        }
+    //    public int Empno { get; internal set; }
+    //    public string Ename { get; internal set; }
+    //    public int Sal { get; internal set; }
+    //    public int Deptno { get; internal set; }
+    //    public string Job { get; internal set; }
+    //    public int EmpID { get; internal set; }
 
-        //function written inside a class is known as method
-        public int GetYearsofExp()
-        {
-            return DateTime.Now.Year - doj.Year;
-        }
+    //    //constructor - is a function used to init object data
+    //    //has the same name as classname, no ret type
+    //    public Emp(int id, string name, DateTime doj)
+    //    {
+    //        this.id = id; this.name = name; this.doj = doj;
+    //    }
+    //    public Emp()
+    //    {
+    //        id = -1; name = "no name";
+    //    }
+    //    public Emp(int id, string name)
+    //    {
+    //        this.id = id; this.name = name;
+    //    }
 
-        public override string ToString()   //only virtual method can be overridden
-        {
-            return $"Emp Id={id}, Name={name}, Experience={GetYearsofExp()} Years";
-        }
+    //    //function written inside a class is known as method
+    //    public int GetYearsofExp()
+    //    {
+    //        return DateTime.Now.Year - doj.Year;
+    //    }
+
+    //    public override string ToString()   //only virtual method can be overridden
+    //    {
+    //        return $"Emp Id={id}, Name={name}, Experience={GetYearsofExp()} Years";
+    //    }
 
 
-    }
+    //}
       
-            //data declared inside class are known as "fields"
-           // int id;
-           // string name;
-            //string dept;
-            //double sal;
-           // DateOnly doj;
+    //        //data declared inside class are known as "fields"
+    //       // int id;
+    //       // string name;
+    //        //string dept;
+    //        //double sal;
+    //       // DateOnly doj;
 
-            //constructor - is a function used to init object data
-            //has the same name as classname, no ret type
-           // public Emp(int eid, string ename, DateOnly doj)
-          // {
-          //      id = eid; name = ename; this.doj = doj;
-          // }
+    //        //constructor - is a function used to init object data
+    //        //has the same name as classname, no ret type
+    //       // public Emp(int eid, string ename, DateOnly doj)
+    //      // {
+    //      //      id = eid; name = ename; this.doj = doj;
+    //      // }
 
-            //function written inside a class is known as method
-           // public int GetYearsofExp()
-           // {
-                //return DateTime.Now.Year - doj.Year;
-           // }
-       // }
+    //        //function written inside a class is known as method
+    //       // public int GetYearsofExp()
+    //       // {
+    //            //return DateTime.Now.Year - doj.Year;
+    //       // }
+    //   // }
 
-    }
+    //}
 
